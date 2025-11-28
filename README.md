@@ -39,9 +39,6 @@ Usage Guidelines:
 	**Autor:** Business Analyst Team
 
 
-	---
-
-
 	## 📋 Executive Summary
 
 
