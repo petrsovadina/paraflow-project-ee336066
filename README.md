@@ -5,15 +5,19 @@ This is a UI design project exported from Paraflow.
 ## Project Structure
 
 - `paraflow/` - Paraflow design resources directory
-  - `*.html` - Page design files
-  - `styles.css` - Common styles file
-  - `project.json` - Project metadata
+  - `Feature Plan/` - Product requirements and technical specifications
+  - `Global Context/` - Strategic documents and user personas
+  - `Screen & Prototype/` - 22 HTML UI components with embedded styles
+  - `Style Guide/` - Complete design system documentation
+  - `Archive/` - Legacy draft documents
 
 ## Development Instructions
 
-1. Review HTML files in `paraflow/` to understand page structure
-2. Use common styles from `paraflow/styles.css`
-3. Create your components and pages based on design files
+1. Review HTML files in `paraflow/Screen & Prototype/` to understand UI components
+2. Design system is documented in `paraflow/Style Guide/benjamin_green_healthcare.style-guide.md`
+3. HTML components contain embedded Tailwind CSS styles (no external CSS file)
+4. Create React/Vue components based on these design files
+5. See `docs/SETUP.md` for complete development setup guide
 
 ## System Prompt
 

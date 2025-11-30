@@ -5,16 +5,20 @@ This is a UI design project exported from Paraflow.
 ## Project Structure
 
 - `paraflow/` - Paraflow design resources directory
-  - `*.html` - Page design files (HTML)
-  - `styles.css` - Common styles file
-  - `project.json` - Project metadata and configuration
+  - `Feature Plan/` - Product requirements and technical specifications (14 files)
+  - `Global Context/` - Strategic documents and user personas (6 files)
+  - `Screen & Prototype/` - 22 HTML UI components with embedded styles
+  - `Style Guide/` - Complete design system documentation
+  - `Archive/` - Legacy draft documents
   - Images, icons and other static resource files
 
 ## Development Recommendations
 
-1. **Page Understanding**: Review HTML files in `paraflow/` to understand page structure
-2. **Style System**: `paraflow/styles.css` contains all shared styles definitions for pages
-3. **Resource References**: Static resource files are also in the `paraflow/` directory
+1. **Page Understanding**: Review HTML files in `paraflow/Screen & Prototype/` to understand UI components
+2. **Style System**: Design system is documented in `paraflow/Style Guide/benjamin_green_healthcare.style-guide.md`
+3. **Embedded Styles**: HTML components contain embedded Tailwind CSS (no external CSS file)
+4. **Resource References**: Static resource files (images) are in the `paraflow/` directory
+5. **Setup Guide**: See `docs/SETUP.md` for complete development setup instructions
 
 ## Recommended Tech Stack
 
