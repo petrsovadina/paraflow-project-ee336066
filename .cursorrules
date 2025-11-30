@@ -5,22 +5,27 @@ This is a project based on the Paraflow design system.
 ## Important Conventions
 
 1. The paraflow/ directory contains original design files, do not modify directly
-2. HTML pages and style files are all in the paraflow/ directory
-3. Static resource files are also in the same directory
-4. Create corresponding React/Vue components based on design files
+2. HTML UI components are in `paraflow/Screen & Prototype/` (22 files)
+3. Design system is documented in `paraflow/Style Guide/`
+4. Static resource files (images) are in `paraflow/` root directory
+5. Create corresponding React/Next.js components based on design files
 
 ## Development Guidelines
 
 - Maintain visual consistency with the original design
-- Reuse style definitions from paraflow/styles.css
-- Component-based development, one page corresponds to one component
+- Use design system from `paraflow/Style Guide/benjamin_green_healthcare.style-guide.md`
+- HTML components contain embedded Tailwind CSS (no external CSS file)
+- Component-based development with TypeScript
+- Follow Next.js 14 app router conventions
 
 ## File Organization
 
 src/
-  components/     # Components created based on paraflow/*.html
-  assets/        # Resource files can be copied from paraflow/
-  styles/        # Global styles, reference paraflow/styles.css
+  app/           # Next.js 14 app router pages
+  components/    # React components based on paraflow/Screen & Prototype/*.html
+  lib/           # Utility functions and shared logic
+  styles/        # Global styles (Tailwind configuration)
+  public/        # Static assets copied from paraflow/
 
 ## System Prompt
 
