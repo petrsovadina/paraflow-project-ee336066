@@ -1,6 +1,6 @@
 # Benjamin - FAB Widget (Floating Action Button) Specification
 
-Entry point do Benjamin AI asistenta v rámci FONS Enterprise systému.
+Entry point do Benjamin AI asistenta.
 
 **Kontext:** Content script injected do FONS Enterprise stránek zobrazuje plovoucí FAB widget, který po kliknutí otevírá Benjamin modální okno.
 
