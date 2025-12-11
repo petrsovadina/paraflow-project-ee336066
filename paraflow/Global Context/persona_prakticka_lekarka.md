@@ -32,7 +32,6 @@ Jana provozuje malou ordinaci v Třebíči již 18 let. Každý den přijme 25-3
 
 - **Ušetřit čas na hledání informací**: Snížit průměrný čas na klinický dotaz z 10 minut na méně než 1 minutu, aby mohla věnovat více času pacientům
 - **Mít jistotu v rozhodování**: Každé předepsané léčivo nebo doporučení musí být podloženo aktuálními guidelines s citacemi, aby se cítila právně chráněna
-- **Snížit administrativní zátěž**: Automatizovat generování rutinní dokumentace (epikrízy, propouštěcí zprávy) z 20 minut na 2 minuty
 - **Udržet krok s medicínou**: Mít přístup k nejnovějším poznatkům a studiím bez nutnosti věnovat večery čtení literatury — informace musí přijít k ní během pracovní doby
 
 ## Typické Úkoly
@@ -41,6 +40,5 @@ Jana provozuje malou ordinaci v Třebíči již 18 let. Každý den přijme 25-3
 - **Kontrola guidelines pro novou diagnózu**: Pacient má nově zjištěný diabetes 2. typu s kardiovaskulárním rizikem — potřebuje ověřit, jaké léky jsou preferovány podle českých i mezinárodních doporučení
 - **Ověření VZP úhrady léku**: Chce předepsat SGLT2 inhibitor, ale nejprve potřebuje vědět, zda je hrazen pojišťovnou, aby pacient neplatil zbytečně z vlastní kapsy
 - **Vysvětlení vedlejších účinků pacientovi**: Dostala anglický SPC nového léku a potřebuje ho přeložit do srozumitelné češtiny pro informovaný souhlas pacienta
-- **Generování epikrízy po hospitalizaci**: Pacient byl propuštěn z nemocnice s 8 dekurzy, 23 laboratorními výsledky a 15 léky — potřebuje vytvořit strukturovanou epikrízu pro dokumentaci
 - **Kontrola diferenciální diagnostiky**: Má pacienta s atypickými příznaky (bolest břicha + neurologické příznaky) a potřebuje "safety net" pro vzácnější diagnózy, na které by mohla zapomenout
 - **Dokumentace AI asistovaných rozhodnutí**: V případě kontroly od pojišťovny nebo právního sporu potřebuje zpětně dohledat, na jakých zdrojích založila své terapeutické rozhodnutí

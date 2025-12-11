@@ -25,45 +25,42 @@
 - `benjamin_design_tokens.css` (16KB) - CSS custom properties a utility classes
 
 ### Screen & Prototype
-**22 HTML komponent + 1 interaktivní prototyp = 23 vizuálních deliverables**
+**19 HTML komponent + 1 interaktivní prototyp = 20 vizuálních deliverables**
 
 ---
 
-## 🎨 Komponenty (22 HTML souborů)
+## 🎨 Komponenty (19 HTML souborů)
 
-### Core Screens (6 hlavních obrazovek)
+### Core Screens (5 hlavních obrazovek)
 1. **benjamin_chat_green.html** (1200px) - Výchozí prázdný stav s Quick Start kartami
 2. **benjamin_active_chat.html** (1200px) - Aktivní konverzace s citacemi [1][2][3]
-3. **benjamin_epicrisis_green.html** (1200px) - Generování epikríz
-4. **benjamin_translator_green.html** (1200px) - Překladač medicínských textů
-5. **benjamin_settings_green.html** (1200px) - Nastavení a historie konverzací
-6. **benjamin_extension_green.html** (400px) - Kompaktní Chrome extension layout
+3. **benjamin_translator_green.html** (1200px) - Překladač medicínských textů
+4. **benjamin_settings_green.html** (1200px) - Nastavení a historie konverzací
+5. **benjamin_extension_green.html** (400px) - Kompaktní Chrome extension layout
 
-### Specialized Components (3 originální komponenty)
-7. **benjamin_epicrisis_editor_green.html** (670px) - Editor epikríz (podle editor.png)
-8. **benjamin_sidebar_menu_green.html** (350px) - Boční menu (podle hamburger.png)
-9. **benjamin_ai_modal_green.html** (1440px) - AI modal (podle modalni okno.png)
+### Specialized Components (2 originální komponenty)
+6. **benjamin_sidebar_menu_green.html** (350px) - Boční menu (podle hamburger.png)
+7. **benjamin_ai_modal_green.html** (1440px) - AI modal (podle modalni okno.png)
 
-### Critical Components (6 klíčových komponent)
-10. **benjamin_fab_widget_states.html** (920px) - 8 stavů FAB widgetu (Idle, Hover, Active, Open, Badge, Loading, Error, Minimized)
-11. **benjamin_sources_panel.html** (920px) - Rozbalovací panel zdrojů s PMID/DOI citacemi
-12. **benjamin_patient_banner.html** (1120px) - Banner kontextu pacienta (Success, Loading, Error)
-13. **benjamin_connection_status.html** (1200px) - Status MCP připojení (Online, Partial, Offline, Degraded)
-14. **benjamin_epicrisis_progress.html** (800px) - Multi-stage progress bar pro generování
-15. **benjamin_quick_start_cards.html** (920px) - 6 návrhových karet pro prázdný stav
+### Critical Components (5 klíčových komponent)
+8. **benjamin_fab_widget_states.html** (920px) - 8 stavů FAB widgetu (Idle, Hover, Active, Open, Badge, Loading, Error, Minimized)
+9. **benjamin_sources_panel.html** (920px) - Rozbalovací panel zdrojů s PMID/DOI citacemi
+10. **benjamin_patient_banner.html** (1120px) - Banner kontextu pacienta (Success, Loading, Error)
+11. **benjamin_connection_status.html** (1200px) - Status MCP připojení (Online, Partial, Offline, Degraded)
+12. **benjamin_quick_start_cards.html** (920px) - 6 návrhových karet pro prázdný stav
 
 ### Enhancement Components (3 vylepšující komponenty)
-16. **benjamin_user_dropdown.html** (360px) - User profile dropdown menu
-17. **benjamin_history_card.html** (800px) - Karta historie konverzace (Standard, Hover, Expanded)
+13. **benjamin_user_dropdown.html** (360px) - User profile dropdown menu
+14. **benjamin_history_card.html** (800px) - Karta historie konverzace (Standard, Hover, Expanded)
 
 ### UI Component Libraries (3 knihovny stavů)
-18. **benjamin_error_states_green.html** (920px) - 6 chybových/prázdných stavů
-19. **benjamin_loading_states_green.html** (920px) - 6 loading variant
-20. **benjamin_toasts_green.html** (420px) - 8 typů toast notifikací
-21. **benjamin_vzp_demo_green.html** (1200px) - Demo VZP Navigator feature
+15. **benjamin_error_states_green.html** (920px) - 6 chybových/prázdných stavů
+16. **benjamin_loading_states_green.html** (920px) - 6 loading variant
+17. **benjamin_toasts_green.html** (420px) - 8 typů toast notifikací
+18. **benjamin_vzp_demo_green.html** (1200px) - Demo VZP Navigator feature
 
 ### Interactive Prototype
-22. **benjamin_complete.prototype.html** - Funkční klikatelný prototyp propojující všechny hlavní screeny
+19. **benjamin_complete.prototype.html** - Funkční klikatelný prototyp propojující všechny hlavní screeny
 
 ---
 
@@ -115,20 +112,15 @@ Weights:     400 (normal), 500 (medium), 600 (semibold), 700 (bold)
 - Rozbalovací Sources Panel s detaily ✅
 - Connection Status Indicator ✅
 
-**B. Generátor Epikríz**
-- Patient Context Banner ✅
-- Multi-stage progress bar (15-30s) ✅
-- Rich text editor s formátovacími nástroji ✅
-
-**C. Překladač Medicínských Textů**
+**B. Překladač Medicínských Textů**
 - Dvousloupcový layout ✅
 - Nastavení překladu ✅
 
-**D. Nastavení a Historie**
+**C. Nastavení a Historie**
 - Conversation History Cards ✅
 - User Profile Dropdown ✅
 
-**E. Chrome Extension**
+**D. Chrome Extension**
 - FAB Widget (8 stavů) ✅
 - Kompaktní layout (400px) ✅
 
@@ -158,17 +150,16 @@ Weights:     400 (normal), 500 (medium), 600 (semibold), 700 (bold)
 - Kontrola lékových interakcí (warfarin + SSRI)
 - Ověření guidelines (diabetes 2. typu)
 - Kontrola VZP úhrady léků
-- Generování epikríz po hospitalizaci
 - Diferenciální diagnostika
 
 ---
 
 ## 📦 Deliverables - Kompletní Seznam
 
-### Vizuální Komponenty (23 HTML souborů)
-✅ 6 Core Screens (Chat, Epikríza, Translator, Settings, Extension, VZP Demo)
-✅ 3 Specialized Components (Editor, Sidebar, AI Modal)
-✅ 6 Critical Components (FAB, Sources, Patient Banner, Connection Status, Progress, Quick Start)
+### Vizuální Komponenty (20 HTML souborů)
+✅ 5 Core Screens (Chat, Translator, Settings, Extension, VZP Demo)
+✅ 2 Specialized Components (Sidebar, AI Modal)
+✅ 5 Critical Components (FAB, Sources, Patient Banner, Connection Status, Quick Start)
 ✅ 3 Enhancement Components (User Dropdown, History Card)
 ✅ 3 UI Libraries (Error States, Loading States, Toasts)
 ✅ 1 Interactive Prototype
@@ -182,7 +173,7 @@ Weights:     400 (normal), 500 (medium), 600 (semibold), 700 (bold)
 ✅ Persona - Dr. Jana Nováková
 ✅ Screen Plan - Detailní plán hlavního interface
 
-**Celkem: 27 deliverables** (23 HTML + 3 dokumentace + 1 persona)
+**Celkem: 24 deliverables** (20 HTML + 3 dokumentace + 1 persona)
 
 ---
 
@@ -251,7 +242,7 @@ Weights:     400 (normal), 500 (medium), 600 (semibold), 700 (bold)
 ## 🎉 Status Projektu
 
 **Design Phase:** ✅ COMPLETED
-**Component Library:** ✅ COMPLETED (23 HTML components)
+**Component Library:** ✅ COMPLETED (20 HTML components)
 **Documentation:** ✅ COMPLETED (28KB developer docs)
 **Design System:** ✅ COMPLETED (Style guide + CSS tokens)
 **Interactive Prototype:** ✅ COMPLETED
