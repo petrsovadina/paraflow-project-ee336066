@@ -363,70 +363,8 @@ interface SourcesPanelProps {
 
 ---
 
-### 4. Epikríza Tab
 
-**Soubor:** `benjamin_epicrisis_green.html`
-**Rozměr:** 1200×800px
-**Purpose:** Automatické generování epikríz
-
-#### Workflow States
-
-**State 1: Ready to Generate**
-- Patient Context Banner (zelený checkmark)
-- Data source checkboxes (☑️ Dekurzy, Lab, Medikace, Vyšetření)
-- Large green button "🤖 Generovat Epikrízu"
-
-**State 2: Generating (15-30s)**
-- Multi-stage progress bar (3 stages)
-- Current stage highlighted
-- Time estimate "~15s zbývá"
-
-**State 3: Generated**
-- Rich text editor s vygenerovaným textem
-- Toolbar s formátovacími nástroji
-- Buttons: "Generovat jinak" | "📤 Exportovat do FONS"
-
-#### Patient Context Banner
-
-```
-┌────────────────────────────────────────────────────────────┐
-│ 👤 Jan Novák, *15.3.1965 (58 let) | Oddělení: Kardiologie │
-│    Hospitalizace: 15.1.2026 - 20.1.2026 (5 dní)           │
-│    ✅ Data dostupná                                         │
-└────────────────────────────────────────────────────────────┘
-```
-
-#### Props
-
-```typescript
-interface EpicrisisTabProps {
-  patientContext: PatientContext | null;
-  dataSources: DataSource[];
-  onGenerate: (sources: string[]) => void;
-  onExport: (content: string) => void;
-  onRegenerate: () => void;
-}
-
-interface PatientContext {
-  name: string;
-  birthDate: Date;
-  department: string;
-  hospitalizationStart: Date;
-  hospitalizationEnd: Date;
-  dataAvailable: boolean;
-}
-
-interface DataSource {
-  id: 'dekurzy' | 'lab' | 'medikace' | 'vysetreni';
-  label: string;
-  count: number;        // Počet záznamů
-  enabled: boolean;     // Checkbox state
-}
-```
-
----
-
-### 5. FAB Widget (Floating Action Button)
+### 4. FAB Widget (Floating Action Button)
 
 **Soubor:** `benjamin_fab_widget_states.html`
 **Purpose:** Entry point pro otevření Benjamin modalu z FONS systému
@@ -500,10 +438,10 @@ interface FABWidgetProps {
 
 ## Specialized Components
 
-### 6. Patient Context Banner
+### 5. Patient Context Banner
 
 **Soubor:** `benjamin_patient_banner.html`
-**Purpose:** Reusable banner zobrazující patient context v Epikríza tab
+**Purpose:** Reusable banner zobrazující patient context
 
 #### States
 
@@ -547,7 +485,7 @@ interface PatientBannerProps {
 
 ---
 
-### 7. MCP Connection Status Bar
+### 6. MCP Connection Status Bar
 
 **Soubor:** `benjamin_connection_status.html`
 **Purpose:** Bottom bar zobrazující real-time connection status k MCP tools
@@ -617,7 +555,7 @@ interface ConnectionStatusProps {
 
 ## UI Component Libraries
 
-### 8. Loading States
+### 7. Loading States
 
 **Soubor:** `benjamin_loading_states_green.html`
 **Purpose:** Reusable loading indicators pro různé use cases
@@ -674,7 +612,7 @@ interface LoadingStateProps {
 
 ---
 
-### 9. Error States
+### 8. Error States
 
 **Soubor:** `benjamin_error_states_green.html`
 **Purpose:** Error & empty state messaging

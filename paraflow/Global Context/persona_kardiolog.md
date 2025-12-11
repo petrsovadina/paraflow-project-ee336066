@@ -42,5 +42,4 @@ Petr je kardiolog s 12letou praxí v městské nemocnici v Brně. Denně vyšet�
 - **Kontrola komplexních lékových interakcí**: Pacient má 12 léků (fibrilace + diabetes + hypertenze + dyslipidémie), přidávám nový lék — potřebuji okamžitou kontrolu všech možných interakcí
 - **Diferenciální diagnostika neobvyklých případů**: Pacient má bolest na hrudi, ale EKG normální a troponin negativní — potřebuji AI "safety net" pro vzácnější příčiny (vasospasmus, mikrovaskulární angina)
 - **Dokumentace off-label použití**: Předepisuji dronedaron místo amiodaronu na základě nové studie — potřebuji zaznamenat přesnou citaci (PMID) pro právní ochranu při kontrole pojišťovny
-- **Generování epikrízy po PCI**: Pacient byl hospitalizován pro STEMI a podstoupil PCI s 2 stenty — potřebuji vygenerovat strukturovanou epikrízu se všemi 8 dekurzy, 23 laboratorními výsledky a 15 léky
 - **Vyhledání české registrace léku**: Chci předepsat nový kardioprotektivní lék, ale nejprve potřebuji ověřit, zda je registrován v ČR (SÚKL) a zda je hrazen VZP

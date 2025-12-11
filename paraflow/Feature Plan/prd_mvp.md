@@ -32,7 +32,6 @@ Nyní je správný čas, protože české zdravotnictví prochází legislativn�
   - MVP **neposkytuje** autonomní diagnostiku ani terapeutická doporučení (jsme asistent, ne náhrada lékaře)
   - MVP **není** určen pro pacienty, pouze pro healthcare professionals
   - MVP **nezahrnuje** DeepConsult, VZP Navigator, "Generovat jinak", mobile app, nebo full MDR certifikaci (to je Fáze 2-3)
-  - MVP **neřeší** celou epikrízu podle vyhlášky 98/2012 Sb. (11 sekcí) — pouze zjednodušená Epikríza 0.1 se 3 datovými zdroji
 
 ---
 
@@ -110,7 +109,7 @@ Rychlý překlad odborných textů (SPC léků, studie) bez ztráty medicínské
 **Co uživatel může dělat:**
 Benjamin je dostupný dvojím způsobem:
 
-**(1) Modální okno v FONS Enterprise (1200×800px overlay):** Lékař pracuje v FONS Enterprise a vidí plovoucí FAB widget (56×56px) v pravém dolním rohu. Kliknutím se otevře Benjamin modální okno přes aktuální obsah (overlay). Modální okno má tab-based navigation v horní části (Chat | Epikríza | Translator | Settings) s Chat jako výchozí záložkou. Systém automaticky načte kontext aktuálního pacienta z FONS Enterprise (pokud relevantní pro Epikrízu). Modální okno lze přetahovat (draggable), minimizovat nebo zavřít — nepřerušuje práci v FONS Enterprise.
+**(1) Modální okno v FONS Enterprise (1200×800px overlay):** Lékař pracuje v FONS Enterprise a vidí plovoucí FAB widget (56×56px) v pravém dolním rohu. Kliknutím se otevře Benjamin modální okno přes aktuální obsah (overlay). Modální okno má tab-based navigation v horní části (Chat | Translator | Settings) s Chat jako výchozí záložkou. Modální okno lze přetahovat (draggable), minimizovat nebo zavřít — nepřerušuje práci v FONS Enterprise.
 
 **(2) Chrome Extension (popup 400×600px + side panel 400×full height):** Lékař klikne na ikonu Benjamin rozšíření v Chrome toolbar. Otevře se popup (400×600px) s kompaktní verzí interface (icon-only tabs) nebo side panel (400×full height) docked to browser edge s plnou konverzační historií. Extension funguje na libovolné stránce, nejen v FONS systému. Content script detekuje FONS stránky a poskytuje context-aware funkce.
 
