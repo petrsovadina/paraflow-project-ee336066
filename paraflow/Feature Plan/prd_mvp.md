@@ -90,22 +90,6 @@ Lékař otevře Benjamin modální okno (kliknutím na plovoucí FAB widget v FO
 - Response time target: <5 sekund (p95)
 - Active Connections Indicator: "✅ Připojeno: PubMed • SÚKL • Semantic Scholar"
 
-### Feature B: Epikríza 0.1 - Automatické Generování Dokumentace (Tab)
-
-**Co uživatel může dělat:**
-Lékař v Benjamin modálním okně přepne na záložku "Epikríza" (tab navigation v horní části modalu). Systém automaticky načte kontext aktuálního pacienta z FONS Enterprise (jméno, datum narození, oddělení, hospitalizace) a zobrazí Patient Context Banner. Lékař zkontroluje automaticky zaškrtnuté datové zdroje (☑️ Dekurzy, ☑️ Laboratorní výsledky, ☑️ Medikace, ☑️ Vyšetření) a klikne na tlačítko "🤖 Generovat Epikrízu". Během 15-30 sekund (progress bar) systém vygeneruje strukturovanou epikrízu podle vyhlášky č. 98/2012 Sb. §21. Lékař může použít tlačítko "Generovat jinak" pro alternativní formulaci. Výstup je zobrazen v rich text editoru, který umožňuje úpravy před exportem do FONS Enterprise.
-
-**Primární benefit:**
-Zkrácení času na vytvoření epikrízy z 20 minut na 2 minuty (90% úspora), zajištění konzistentní struktury dokumentace, a snížení rizika opomenutí důležitých informací. Lékař se může více soustředit na klinické zhodnocení místo manuálního přepisování. Tab-based interface zajišťuje, že epikríza je součástí jednotného workflow Benjamina.
-
-**Technická implementace (Supabase):**
-- Input: JSON payload z FONS Enterprise s patient context, medicalReports, labResults, medications, examinations
-- Processing: Supabase Edge Function (epicrisis-generate) → Claude API s prompt template podle vyhlášky §21
-- Output: Strukturovaný text v epicrisis_generations tabulce s patient_id, version, is_final flags
-- Lékař vždy kontroluje finální text (rich text editor s možností úprav)
-- Možnost regenerace (version tracking via parent_id) - tlačítko "Generovat jinak"
-- Export do FONS Enterprise přes API integration
-
 ### Feature C: Translator - Jazykový Překladač (MVP Základní, Tab)
 
 **Co uživatel může dělat:**
@@ -167,12 +151,6 @@ Právní ochrana lékaře ("Řídil jsem se guidelines XYZ z roku 2024, které j
 - **Trigger**: Dr. Nováková má během vyšetření pacienta s diabetem 2. typu a kardiovaskulárním rizikem pochybnost, jaké léky předepsat.
 - **Path**: Klikne na plovoucí FAB widget (56×56px) v pravém dolním rohu FONS Enterprise. Otevře se Benjamin modální okno (1200×800px) s výchozí záložkou "Chat". V prázdném stavu vidí 6 Quick Start Cards — klikne na "Farmakologie" nebo rovnou zadá otázku do chat input: "Jaké jsou guidelines pro léčbu diabetu 2. typu u pacienta s KV rizikem?", stiskne Enter. Během 3 sekund se zobrazí AI odpověď v levém chat bubble s inline citacemi [1], [2], [3] a rozbalovacím panelem zdrojů (Sources Panel). Systém prostřednictvím MCP nástrojů získal data z PubMed, SÚKL a ČLS JEP. Dr. Nováková vidí odpověď s 3 citacemi: [1] ČLS JEP 2024 (české diabetologické guidelines), [2] ESC 2023 guidelines (kardiovaskulární prevence), [3] SÚKL - hrazené SGLT2 inhibitory (empagliflozin, dapagliflozin).
 - **Result**: Dr. Nováková má evidence-based odpověď s odkazy na zdroje, ví, že SGLT2 inhibitory jsou preferovány a jsou hrazené VZP, může okamžitě předepsat a věnovat zbývající čas vysvětlení pacientovi. Celá interakce trvala 30 sekund místo 10 minut. Může pokračovat s follow-up otázkou: "Jaké jsou kontraindikace empagliflozinu?" bez nutnosti začínat znovu.
-
-### Example 2: Generování Epikrízy (Epikríza Tab - Happy Path)
-
-- **Trigger**: Dr. Svoboda propouští pacienta po 5 dnech hospitalizace pro akutní infarkt myokardu, musí vytvořit epikrízu.
-- **Path**: Otevře Benjamin modální okno v FONS Enterprise (kliknutím na FAB widget), přepne na záložku "Epikríza" v horní tab navigation. Systém automaticky načte kontext aktuálního pacienta z FONS Enterprise a zobrazí Patient Context Banner: "Jan Novák, *1965 (58 let) | Oddělení: Kardiologie | Hospitalizace: 15.1.2026 - 20.1.2026 (5 dní) | Status: ✅ Data dostupná". Lékař zkontroluje automaticky zaškrtnuté datové zdroje (☑️ Dekurzy (8), ☑️ Laboratorní výsledky (23), ☑️ Medikace (15), ☑️ Vyšetření (5)) a klikne na tlačítko "🤖 Generovat Epikrízu". Zobrazí se progress bar (15-30s), systém načte data (lékařské zprávy: anamnéza, průběh; laboratorní výsledky: troponin, lipidogram, KO; medikace: ASA, statiny, betablokátor). Edge Function zavolá Claude API s promptem podle vyhlášky §21. Za 18 sekund se v rich text editoru zobrazí předvyplněný text s 5 sekcemi: identifikace pacienta, diagnózy (I21.0 STEMI přední stěny), průběh hospitalizace, laboratorní výsledky, medikace, doporučení pro ambulantní péči.
-- **Result**: Dr. Svoboda zkontroluje vygenerovaný text (nalezne 2 drobné formulační úpravy, opraví je přímo v editoru), klikne na "📤 Exportovat do FONS" a uzavře epikrízu. Celý proces trval 2 minuty místo 20 minut manuálního vyplňování. Epikríza je uložena v epicrisis_generations tabulce s is_final=true a exportována do FONS Enterprise.
 
 ### Example 3: Překlad SPC Léku (Translator Tab - Happy Path)
 
