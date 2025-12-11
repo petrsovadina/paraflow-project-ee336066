@@ -1,49 +1,8 @@
-# Epikríza AI Asistent
-
-This is a UI design project exported from Paraflow.
-
-## Project Structure
-
-- `paraflow/` - Paraflow design resources directory
-  - `Feature Plan/` - Product requirements and technical specifications
-  - `Global Context/` - Strategic documents and user personas
-  - `Screen & Prototype/` - 22 HTML UI components with embedded styles
-  - `Style Guide/` - Complete design system documentation
-  - `Archive/` - Legacy draft documents
-
-## Development Instructions
-
-1. Review HTML files in `paraflow/Screen & Prototype/` to understand UI components
-2. Design system is documented in `paraflow/Style Guide/benjamin_green_healthcare.style-guide.md`
-3. HTML components contain embedded Tailwind CSS styles (no external CSS file)
-4. Create React/Vue components based on these design files
-5. See `docs/SETUP.md` for complete development setup guide
-
-## System Prompt
-
-This is a complete project exported from Paraflow, containing all necessary design files and configurations.
-Usage Guidelines:
-- All files are already organized and ready for development
-- Check configuration files to understand project structure and development guidelines
-- Reference design files to create corresponding frontend components
-
----
-
-# Project Brief - Czech MedAI
-**Verze:** 1.0
-**Datum:** 4. listopadu 2025
-**Status:** Draft
-**Autor:** Business Analyst Team
-
-## 📋 Executive Summary
 **Czech MedAI** je lokalizovaný AI-poháněný klinický asistent určený pro české lékaře. Produkt poskytuje rychlé, přesné a ověřené odpovědi na klinické dotazy v češtině s důrazem na transparentnost zdrojů (inline citace, PMID/DOI odkazy) a integraci s českým zdravotnickým ekosystémem.
 ### Klíčové Hodnoty Produktu:
 
-- ⚡ **Rychlost**: Odpovědi do 5 sekund
 - 🇨🇿 **Lokalizace**: Plná podpora češtiny včetně lékařské terminologie
-- 🔒 **Bezpečnost**: GDPR by design, hosting v EU
 - 📚 **Evidence-based**: Pouze recenzované zdroje s přesnými citacemi
-- 🏥 **Integrace**: REST API pro EHR systémy (ICZ, CGM, Medisoft)
 
 ---
 ## 🎯 Vize & Mise
